@@ -2930,9 +2930,9 @@ qnode-log@1.0.3:
     log4js "2.3.0"
     sprintf-js "1.1.1"
 
-qnode-rest@1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/qnode-rest/-/qnode-rest-1.0.9.tgz#f60ce6404247c416116a5f398ffc68bf4c2d8300"
+qnode-rest@1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/qnode-rest/-/qnode-rest-1.0.10.tgz#bf385cce8c7775b3744b45daf2af384211be82f6"
   dependencies:
     kcors "2.2.1"
     koa "2.3.0"
