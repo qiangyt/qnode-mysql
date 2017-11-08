@@ -1,6 +1,6 @@
 {
     "name": "qnode-mysql",
-    "version": "0.9.0",
+    "version": "0.9.1",
     "description": "MySQL client of qnode framework, by Qiang Yiting",
     "main": "src/index.js",
     "scripts": {
@@ -25,11 +25,11 @@
     "private": false,
     "license": "MIT",
     "dependencies": {
-        "qnode-beans": "1.1.2",
+        "qnode-beans": "1.1.3",
         "qnode-config": "1.0.6",
         "qnode-error": "1.0.3",
         "qnode-log": "1.0.3",
-        "qnode-rest": "1.0.6",
+        "qnode-rest": "1.0.9",
         "sequelize": "4.18.0"
     },
     "devDependencies": {
