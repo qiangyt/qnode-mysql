@@ -1,7 +1,6 @@
 {
     "version": "0.2.0",
     "configurations": [
-
         {
             "name": "test",
             "type": "node",
@@ -15,7 +14,7 @@
                 "--nolazy"
             ],
             "sourceMaps": false,
-            "outDir": null
+            "outFiles": []
         }
 
     ]
