@@ -1,6 +1,6 @@
 {
     "name": "qnode-mysql",
-    "version": "0.9.5",
+    "version": "0.9.6",
     "description": "MySQL client of qnode framework, by Qiang Yiting",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
@@ -32,7 +32,7 @@
         "bluebird": "3.5.1",
         "lodash": "4.17.4",
         "mysql": "2.13.0",
-        "qnode-beans": "1.1.7",
+        "qnode-beans": "1.1.8",
         "qnode-config": "1.0.6",
         "qnode-error": "1.0.3",
         "qnode-log": "1.0.3",
