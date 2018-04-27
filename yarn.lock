@@ -1014,7 +1014,7 @@ block-stream@*:
   dependencies:
     inherits "~2.0.0"
 
-bluebird@^3.3.4, bluebird@^3.4.6, bluebird@^3.4.7:
+bluebird@3.5.1, bluebird@^3.3.4, bluebird@^3.4.6, bluebird@^3.4.7:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
 
@@ -3544,7 +3544,7 @@ node-pre-gyp@^0.6.36:
     tar "^2.2.1"
     tar-pack "^3.4.0"
 
-node-uuid@~1.4.7:
+node-uuid@1.4.8, node-uuid@~1.4.7:
   version "1.4.8"
   resolved "https://registry.yarnpkg.com/node-uuid/-/node-uuid-1.4.8.tgz#b040eb0923968afabf8d32fb1f17f1167fdab907"
 
@@ -3959,6 +3959,15 @@ qnode-beans@1.1.4:
   resolved "https://registry.npmjs.org/qnode-beans/-/qnode-beans-1.1.4.tgz#0f8e24eb68c3f2ea31cd8cbf3d93239cf4e1f617"
   dependencies:
     lodash "4.17.4"
+    qnode-log "1.0.3"
+
+qnode-beans@1.1.7:
+  version "1.1.7"
+  resolved "https://registry.npmjs.org/qnode-beans/-/qnode-beans-1.1.7.tgz#79d9ebb2ca4c39a327bb4c377bc90a83fc7f0e4e"
+  dependencies:
+    lodash "4.17.4"
+    node-uuid "1.4.8"
+    qnode-error "1.0.3"
     qnode-log "1.0.3"
 
 qnode-config@1.0.2:
