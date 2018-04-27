@@ -78,8 +78,9 @@ export default class SequelizerManager {
         }
 
         if (!instanceConfig.dialect) instanceConfig.dialect = 'mysql';
+        if (!instanceConfig.sequelizeDir) instanceConfig.sequelizeDir = 'sequelize';
 
-        if (instanceConfig.dialect === 'mysql') return new MySqlSequelizer(instanceName, instanceConfig);
+        if (instanceConfig.dialect === 'mysql') return new MySqlSequelizer(instanceName, instanceConfig, null);
 
         throw new Error('database dialect "' + instanceConfig.dialect + ' is not supported yet');
     }

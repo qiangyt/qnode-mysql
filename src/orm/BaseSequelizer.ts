@@ -5,6 +5,11 @@ import * as Util from 'util';
 import * as Sequelize from 'sequelize';
 
 
+declare module global {
+    const config: any;
+}
+
+
 /**
  * 封装一个sequelizer实例
  */
@@ -16,8 +21,10 @@ export default class BaseSequelizer {
     protected _beans: any;
 
 
-    constructor(public instanceName: string, public _config: any) {
+    constructor(public instanceName: string, public _config: any, beans: any) {
         this._logger = new Logger('Sequelizer.' + (instanceName ? instanceName : '<default>'));
+        this._beans = beans || global.config.Beans;
+        this.init();
     }
 
 
