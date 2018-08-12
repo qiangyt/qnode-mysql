@@ -274,4 +274,32 @@ export default class SequelizeDao {
             .then(fieldValues => fieldValues.map(row => row[fieldName]));
     }
 
+    rawSQL(ctx: any, sql: string, options?: Sequelize.QueryOptions) {
+        return this.sequelizer.query(sql, options);
+    }
+
+    rawSELECT(ctx: any, sql: string, options?: Sequelize.QueryOptions) {
+        options = options || {};
+        options.type = Sequelize.QueryTypes.SELECT;
+        return this.sequelizer.query(sql, options);
+    }
+
+    rawINSERT(ctx: any, sql: string, options?: Sequelize.QueryOptions) {
+        options = options || {};
+        options.type = Sequelize.QueryTypes.INSERT;
+        return this.sequelizer.query(sql, options);
+    }
+
+    rawUPDATE(ctx: any, sql: string, options?: Sequelize.QueryOptions) {
+        options = options || {};
+        options.type = Sequelize.QueryTypes.UPDATE;
+        return this.sequelizer.query(sql, options);
+    }
+
+    rawDELETE(ctx: any, sql: string, options?: Sequelize.QueryOptions) {
+        options = options || {};
+        options.type = Sequelize.QueryTypes.DELETE;
+        return this.sequelizer.query(sql, options);
+    }
+
 }
